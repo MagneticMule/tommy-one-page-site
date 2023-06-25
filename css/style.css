@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(180deg, #72008f 0%, #28024b 100%), #1c0130;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 4em;
+  color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
+}
+
+a {
+  color: #ffffff;
+}
+
+header>h1 {
+  font-size: 5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.23;
+}
+
+h2 {
+  font-size: .9rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: .5em;
+  max-width: 50%;
+
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  max-width: 80%;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  max-width: 50%;
+}
+
+section {
+  margin-bottom: 8em;
+}
+
+a.big-link {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+p.social-links>span {
+  display: block;
+  font-size: 2rem;
+}
+
+p.social-links>a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p.works-header {
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 2em;
+}
+
+
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.works-container__card {
+  /* border: 8px solid blue; */
+  flex-grow: 0;
+  flex-basis: 20rem;
+}
+
+.works-container__card>img {
+  max-width: 7.5em;
+}
+
+.works-container__card>h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: .8em;
+}
+
+footer>p {
+  margin: 2em 0;
+}
