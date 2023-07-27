@@ -14,9 +14,16 @@ a {
 }
 
 header>h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   line-height: 1.23;
+}
+
+@media screen and (max-width: 900px) {
+  header>h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
 }
 
 h2 {
@@ -38,16 +45,15 @@ p {
   line-height: 1.6;
   padding: 0;
   margin: 0;
-  max-width: 50%;
 }
 
 section {
-  margin-bottom: 8em;
+  margin-bottom: 6em;
 }
 
 a.big-link {
   display: block;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: .8em;
 }
