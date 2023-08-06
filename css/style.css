@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(180deg, #72008f 0%, #28024b 100%), #1c0130;
-  max-width: 70rem;
+  max-width: 900px;
   margin: 0 auto;
   padding: 4em;
   color: #FFFFFF;
@@ -20,38 +26,47 @@ a {
   color: #ffffff;
 }
 
-header>h1 {
-  font-size: 4rem;
+header {
+  margin-bottom: 4em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   line-height: 1.23;
+  margin: 0;
 }
 
 @media screen and (max-width: 900px) {
-  header>h1 {
+  h1 {
     font-size: 2rem;
     line-height: 1.4;
   }
 }
 
 h2 {
-  font-size: .9rem;
+  font-size: 2.441rem;
   text-transform: uppercase;
   border-bottom: 2px solid #FFFFFF;
   padding-bottom: .5em;
-  max-width: 50%;
 
 }
 
 h3 {
-  margin: 0;
-  padding: 0;
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
 }
 
 p {
-  max-width: 80%;
   line-height: 1.6;
-  padding: 0;
-  margin: 0;
 }
 
 section {
@@ -60,7 +75,6 @@ section {
 
 a.big-link {
   display: block;
-  font-size: 2rem;
   font-weight: bold;
   margin-bottom: .8em;
 }
@@ -68,7 +82,6 @@ a.big-link {
 @media screen and (max-width: 900px) {
   a.big-link {
     font-size: 1rem;
-
   }
 }
 
@@ -82,9 +95,9 @@ p.social-links>a {
   font-weight: bold;
 }
 
-p.works-header {
+p.section-blurb {
   line-height: 1.2;
-  font-size: 3rem;
+  font-size: 1rem;
   margin-bottom: 2em;
 }
 
@@ -92,17 +105,19 @@ p.works-header {
 .works-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 3em;
+  gap: 1em;
+  justify-content: space-between;
 }
 
 .works-container__card {
   /* border: 8px solid blue; */
   flex-grow: 0;
-  flex-basis: 20rem;
+  flex-basis: 15rem;
+  flex-grow: 1;
 }
 
 .works-container__card>img {
-  max-width: 7.5em;
+  max-width: 5em;
 }
 
 .works-container__card>h3 {
