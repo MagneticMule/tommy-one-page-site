@@ -42,7 +42,7 @@ a {
 }
 
 header {
-  margin-bottom: 4em;
+  margin-bottom: 8em;
   margin-top: 12em;
 }
 
@@ -126,9 +126,14 @@ li {
   margin-bottom: .75em;
 }
 
-.section-head>h2 {
-  font-size: 2rem;
+.section-head {
+  margin-bottom: 1.8em;
+}
+
+.section-head>h3 {
+  font-size: 1.8rem;
   text-transform: uppercase;
+  font-weight: 200;
 }
 
 .section-head__blurb {
