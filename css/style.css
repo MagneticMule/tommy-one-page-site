@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 :root {
   --background-clr: #f5f2ed;
@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   padding: 4em;
   color: var(--foreground-clr);
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans;
   line-height: 1.7;
   max-width: 1200px;
 }
@@ -44,23 +44,25 @@ header {
 header>h1 {
   font-weight: bold;
   margin: 0 auto;
+  line-height: 1.2;
+
 }
 
-section.highlights {
+.highlights {
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
-section.highlights>* {
-  flex-basis: 100%;
+.highlights>* {
+  flex: 1;
 }
 
-section.highlights .highlight {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.21);
-  padding: 0;
-  margin: 0;
-  padding: 1em;
-  border-radius: 8px;
+.highlights .highlight {
+  /* border-bottom: 8px solid var(--accent-clr); */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.21);
+  padding: 2em;
+  min-width: 300px;
 }
 
 section.dark {
@@ -97,9 +99,7 @@ li {
   margin-bottom: .75em;
 }
 
-.section-head>h2 {
-  margin-bottom: .8em;
-}
+.section-head>h3 {}
 
 .section-head__blurb {
   line-height: 1.2;
