@@ -70,7 +70,6 @@ body {
 a {
   color: var(--compliment-clr);
   text-decoration: none;
-
 }
 
 header {
@@ -79,7 +78,7 @@ header {
 }
 
 header>h2 {
-  font-weight: bold;
+  font-weight: 400;
   margin: 0 auto;
   line-height: 1.2;
 }
