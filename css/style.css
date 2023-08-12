@@ -217,9 +217,13 @@ h5 {
   font-size: 1.25rem;
 }
 
-
 section {
   margin-bottom: 6em;
+}
+
+
+footer {
+  border-top: 1px solid var(--compliment-clr);
 }
 
 footer>p {
