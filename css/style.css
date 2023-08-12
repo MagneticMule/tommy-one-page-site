@@ -5,7 +5,7 @@
   --background-clr: #1d1d1d;
   --foreground-clr: #f3f3f3;
   --compliment-clr: #c5c4c4;
-  --accent-clr: #e6810e;
+  --accent-clr: #ebcead;
 }
 
 *, *::before, *::after {
@@ -68,7 +68,8 @@ body {
 }
 
 a {
-  color: var(--compliment-clr);
+  color: var(--accent-clr);
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -78,13 +79,20 @@ header {
 }
 
 header>h2 {
-  font-weight: 400;
+  font-weight: 00;
   margin: 0 auto;
   line-height: 1.2;
+  margin-bottom: .4em;
 }
 
 header>h4 {
   color: var(--compliment-clr);
+}
+
+header>p {
+  color: var(--compliment-clr);
+
+  font-weight: 600;
 }
 
 .highlights {
@@ -132,8 +140,10 @@ section {}
   margin-bottom: 1em;
 }
 
+.entry>* {}
+
 .entry-info {
-  flex-basis: 60%;
+  flex-basis: 60%
 }
 
 .entry-info li {
