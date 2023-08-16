@@ -134,16 +134,29 @@ section {}
 
 .entry {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 1em;
-  justify-content: space-between;
-  margin-bottom: 1em;
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
+  padding: 2em 0;
+}
+
+@media (max-width:860px) {
+  .entry {
+    flex-direction: column;
+  }
 }
 
 .entry>* {}
 
 .entry-info {
-  flex-basis: 60%
+  min-width: 300px;
+  flex: 1;
+}
+
+.entry>p {
+  min-width: 100px;
 }
 
 .entry-info li {
@@ -157,7 +170,7 @@ section {}
 }
 
 .entry>p {
-  margin-left: auto;
+  /* margin-left: auto; */
   font-weight: bold;
 }
 
