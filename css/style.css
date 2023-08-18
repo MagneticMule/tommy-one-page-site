@@ -139,7 +139,7 @@ section {}
   gap: 1em;
   /* justify-content: space-between; */
   /* align-items: flex-start; */
-  padding: 2em 0;
+  padding: 0 0 2em 0;
 }
 
 @media (max-width:860px) {
