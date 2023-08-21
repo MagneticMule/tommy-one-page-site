@@ -21,12 +21,12 @@
   <body>
     <nav>
       <img src="images/penguin.svg" width="64px" height="64px" alt="Site Logo" />
-      <!-- <ul>
+      <ul class="main-nav">
         <li><a href="#current-work">Current Work</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#work-history">Work History</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul> -->
+      </ul>
     </nav>
     <header>
       <h4>Hello. I'm Tom Sweeney.</h4>
@@ -224,6 +224,24 @@
       <section id="contact">
         <div class="section-head">
           <h3>Stay in touch</h3>
+        </div>
+        <div class="form-container">
+          <form>
+            <label>
+              What shall I call you?
+              <input type="text" maxlength="40" placeholder="Tommy or whatever" required />
+            </label>
+            <label>
+              If you want a reply I'll need your email
+              <input type="email" maxlength="40" placeholder="tommy@tommy.com" required />
+            </label>
+            <label>
+              What do you want to tell me?
+              <textarea rows="5" cols="120">
+                Give me everything!
+              </textarea>
+            </label>
+          </form>
         </div>
         You can email me at <a href="mailto:tommy@tomsweeney.dev">tommy@tomsweeney.dev</a>
         <p class="social-links"><span>Don&#39;t be shy.</span> You can follow me on <a href="#">Instagram</a>, <a href="#">Twitter</a> and <a href="#">Facebook</a> if you are so inclined.</p>
