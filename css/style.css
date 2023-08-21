@@ -79,6 +79,13 @@ header {
   margin-top: 16em;
 }
 
+@media screen and (max-width: 900px) {
+  header {
+    margin-bottom: 8em;
+    margin-top: 8em;
+  }
+}
+
 header>h2 {
   font-weight: bold;
   margin: 0 auto;
